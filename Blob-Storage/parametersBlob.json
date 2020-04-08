@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccounts_mystorage07_name": {
-            "value": "ystorage08"
+            "value": "mstorage08"
         }
     }
 }
