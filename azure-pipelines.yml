@@ -1,16 +1,4 @@
 # Starter pipeline
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(e5d852a2-8798-447e-93f1-d012152d08fd)'
-    subscriptionId: 'e5d852a2-8798-447e-93f1-d012152d08fd'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: '20200408'
-    location: 'Central US'
-    templateLocation: 'Linked artifact'
-    csmFile: 'https://github.com/umakant75/azure-quickstart-templates/blob/master/101-storage-multi-blob-container/azuredeploy.json'
-    csmParametersFile: 'https://github.com/umakant75/azure-quickstart-templates/blob/master/101-storage-multi-blob-container/azuredeploy.parameters.json'
-    deploymentMode: 'Validation'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
