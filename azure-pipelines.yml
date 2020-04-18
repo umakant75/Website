@@ -17,3 +17,16 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+steps:
+- script: 
+    - task: AzureResourceManagerTemplateDeployment@3
+      inputs:
+        deploymentScope: 'Subscription'
+        azureResourceManagerConnection: 'Free Trial(e5d852a2-8798-447e-93f1-d012152d08fd)'
+        subscriptionId: 'e5d852a2-8798-447e-93f1-d012152d08fd'
+        location: 'Central US'
+        templateLocation: 'URL of the file'
+        csmFileLink: 'Blob-Storage/templateBlob.json'
+        csmParametersFileLink: 'Blob-Storage/parametersBlob.json'
+        deploymentMode: 'Incremental'
